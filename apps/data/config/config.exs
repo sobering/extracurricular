@@ -7,6 +7,13 @@ config :data,
     1 => ["kind:beginner", "kind:starter", "level:starter"],
     5 => ["kind:intermediate", "level:intermediate"],
     9 => ["kind:advanced", "level:advanced"]
+  },
+  types: ["type-bug", "type-documentation", "type-enhancement", "type-feature"],
+  type_label_mapping: %{
+    "type-bug" => ["kind:bug", "bug"],
+    "type-documentation" => ["kind:documentation", "documentation"],
+    "type-enhancement" => ["kind:enhancement", "enhancement"],
+    "type-feature" => ["kind:feature", "feature"]
   }
 
 config :data, Data.Repo,
